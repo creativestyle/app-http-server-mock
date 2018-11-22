@@ -1,0 +1,29 @@
+{
+    "name": "creativestyle/app-http-server-mock",
+    "description": "An minimal app http server based on PHP cli-server for use in tests",
+    "keywords": ["phpunit", "unit-testing", "server", "appserver", "webserver", "http"],
+    "homepage": "https://creativestyle.de",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Filip Sobalski",
+            "email": "filip.sobalski@creativestyle.pl"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "ext-json": "*",
+        "phpunit/phpunit": "~6.2",
+        "symfony/process": "^4.1",
+        "guzzlehttp/guzzle": "~6.3",
+        "symfony/http-foundation": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Creativestyle\\AppHttpServerMock\\": "src/",
+            "Creativestyle\\AppHttpServerMock\\Tests\\": "tests/"
+        }
+    }
+}
